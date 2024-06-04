@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+
+    
+}
+
+header .interface{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+header {
+    width: 100%;
+    padding: 40px 80px;
+}
+
+header .logo img{
+    max-width: 40px;
+}
+
+header .nome-site{
+    list-style-type: none;
+}
+
+article .redes-sociais{
+    height: 100%;
+    display: flex;
+    padding-block: 80px;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+article .redes-sociais ul{
+    display: flex;   
+
+    position: relative;
+
+}
+
+article .redes-sociais ul li{
+    width: 90px;
+    height: 90px;
+
+    background-color: #ffffff;
+    box-shadow: 0 8px 25px #00000055 ;
+    border-radius: 90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+
+    transition: .2s;
+}
+
+article .redes-sociais ul li:hover{
+    width: 180px;
+}
+
+article .redes-sociais ul li span{
+    position: absolute;
+}
+
+article .redes-sociais ul li .icon{
+    color: #ccc;
+    font-size: 2.2em;   
+}
+
+article .redes-sociais ul li .text{
+    color: #ffffff;
+    font-size: 18px;
+    transform: scale(0);
+    transition: 0.2s;   
+    transition-delay: 0.2s;
+}
+article .redes-sociais ul li:hover .text{
+    transform: scale(1);
+}
+article .redes-sociais ul li:hover .icon{
+    transform: scale(0);
+    transition: 0.2s;
+}
+
+article .redes-sociais ul li::before{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(45deg, var(--cor1), var(--cor2));
+    inset: 0;
+    opacity: 0;
+    border-radius: 90px;
+}
+
+article .redes-sociais ul li:hover::before{
+    opacity: 1;
+}
+
+/* final do corpo */
+
